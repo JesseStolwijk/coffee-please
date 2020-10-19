@@ -27,6 +27,7 @@ repositories {
     mavenLocal()
     jcenter()
     maven { url 'https://kotlin.bintray.com/ktor' }
+    maven { url "https://jitpack.io" }
 }
 
 dependencies {
@@ -35,6 +36,7 @@ dependencies {
     implementation "ch.qos.logback:logback-classic:$logback_version"
     implementation "io.ktor:ktor-server-core:$ktor_version"
     implementation "io.ktor:ktor-html-builder:$ktor_version"
+    implementation "com.github.kenglxn.QRGen:javase:2.6.0"
     testImplementation "io.ktor:ktor-server-tests:$ktor_version"
 }
 
